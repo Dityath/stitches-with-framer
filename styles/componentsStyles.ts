@@ -14,4 +14,6 @@ export const PageTextTitle = styled("h1", {
   fontSize: "2.5rem",
   fontWeight: "bold",
   margin: "1rem 0",
+  color: "#333",
+  fontFamily: "Roboto, sans-serif",
 });

@@ -6,7 +6,7 @@ const DynamicHomePage = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  return <PageText title={`Hi ${id ? id : "You"}`} />;
+  return <PageText title={`${id ? id : "You"}`} />;
 };
 
 export default DynamicHomePage;
