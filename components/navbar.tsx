@@ -1,10 +1,12 @@
 import React from "react";
-import { NavbarDiv } from "../styles/navbarStyle";
+import { NavbarDiv, NavbarInside, NavbarTitle } from "../styles/navbarStyle";
 
 const Navbar = () => {
   return (
     <NavbarDiv>
-      <h1>Navbar</h1>
+      <NavbarInside>
+        <NavbarTitle>Title</NavbarTitle>
+      </NavbarInside>
     </NavbarDiv>
   );
 };

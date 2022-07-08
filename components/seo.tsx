@@ -1,7 +1,11 @@
 import Head from "next/head";
 import React from "react";
+import { useRouter } from "next/router";
 
 const Seo = () => {
+  const router = useRouter();
+  const title: string = router.asPath;
+
   return (
     <Head>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -9,7 +13,10 @@ const Seo = () => {
       <meta name="keywords" content="next, app, create next app" />
       <meta name="author" content="create next app" />
       <link rel="icon" href="/favicon.ico" />
-      <title>Next Js</title>
+      <title>
+        Next Js{" "}
+        {title !== "/" && title !== "/[id]" ? ` - ${title.substring(1)}` : ""}
+      </title>
     </Head>
   );
 };
