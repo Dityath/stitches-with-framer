@@ -6,7 +6,7 @@ export const PageTextDiv = styled("div", {
   alignItems: "center",
   justifyContent: "center",
   textAlign: "center",
-  width: "100vw",
+  width: "100%",
   height: "100vh",
 });
 
@@ -16,4 +16,5 @@ export const PageTextTitle = styled("h1", {
   margin: "1rem 0",
   color: "#333",
   fontFamily: "Roboto, sans-serif",
+  textTransform: "capitalize",
 });
